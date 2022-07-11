@@ -1,27 +1,31 @@
-<h1>asgard client By MasterBootR</h1>
-<div class="gradient"></div>
-<style>
-  .gradient {
-    /* 设置容器尺寸 - 原理1 */
-    width: 400px;
-    height: 400px;
-    /* 背景渐变色 - 原理2 */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    /* 背景尺寸 - 原理3 */
-    background-size: 600% 600%;
-    /* 循环动画 - 原理4 */
-    animation: gradientBG 5s ease infinite;
-  }
-  /* 动画，控制背景 background-position */
-  @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
+<style type="type/css">
+  *{  
+            margin: 0px;  
+            padding: 0px;  
+        }  
+        video{  
+            position: fixed;  
+            right: 0px;  
+            bottom: 0px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            /*加滤镜*/
+            /*filter: blur(15px); //背景模糊设置 */
+            /*-webkit-filter: grayscale(100%);*/  
+            /*filter:grayscale(100%); //背景灰度设置*/  
+            z-index:-11
+        }  
+        source{  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+        } 
 </style>
+<video id="v1" autoplay loop muted>
+  <source src="./p1.mp4" type="video/mp4"  />
+</video>
+<h1>asgard client By MasterBootR</h1>
+
